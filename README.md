@@ -60,6 +60,12 @@ attack_all() => attack_all("valgrind")
 
 To support other runtime defenses, you need to add your supporting code in DefEvalLib.py (e.g., removing extra printing info)
 
+### UG-Project Alterations (Jacob)
+- Added SDE support to `DefEvalLib.py` and fixed some errors.
+- Removed unsupported features as mentioned in writeup.
+- To use SDE, install Intel SDE and then pass the **absolute** path into the environment variable `SDE_PATH` before any testing
+- **If SDE_PATH is set, the testing will use SDE** so ensure you check before testing without SDE.
+
 ### Result Format
 
 The output file is in csv format:
